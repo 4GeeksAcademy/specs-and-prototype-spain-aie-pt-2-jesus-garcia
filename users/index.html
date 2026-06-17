@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>AgentHub Users</title>
+    <script src="/theme.js"></script>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script src="/tailwind-config.js"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap"
+        rel="stylesheet" />
+    <link href="/styles.css" rel="stylesheet" />
+</head>
+
+<body class="bg-background text-on-background font-body-md min-h-screen flex overflow-hidden">
+    <div data-layout-sidebar></div>
+    <main class="flex-1 flex flex-col md:ml-[260px] h-screen bg-pattern relative">
+        <div data-layout-topbar></div>
+        <div class="flex-1 overflow-y-auto p-container-margin md:p-xl space-y-xl z-10">
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-md">
+                <div>
+                    <h2 class="font-headline-lg text-headline-lg-mobile sm:text-headline-lg text-on-surface">User
+                        Operations</h2>
+                    <p class="font-body-md text-body-md text-on-surface-variant mt-xs">Registered users, subscription
+                        plans and account status in one operational grid.</p>
+                </div>
+                <div class="flex items-center gap-sm">
+                    <span
+                        class="px-sm py-xs clip-octagon bg-secondary-container text-on-secondary-container font-code-sm text-code-sm">1,248
+                        active</span>
+                    <button
+                        class="px-md py-sm bg-primary-container text-on-primary-container font-label-mono text-label-mono clip-octagon">Invite
+                        User</button>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-gutter">
+                <div
+                    class="bg-surface-container-high p-lg clip-octagon border border-outline-variant/30 hover:border-secondary/50 transition-colors group relative overflow-hidden">
+                    <div class="absolute top-0 right-0 p-sm opacity-10 group-hover:opacity-20 transition-opacity">
+                        <span class="material-symbols-outlined text-6xl text-secondary"
+                            style="font-variation-settings: 'FILL' 1;">group</span>
+                    </div>
+                    <div class="flex justify-between items-start mb-lg relative z-10">
+                        <span class="font-label-mono text-label-mono text-on-surface-variant">Active Seats</span>
+                        <span class="material-symbols-outlined text-secondary">group</span>
+                    </div>
+                    <div class="relative z-10">
+                        <span class="font-display-lg text-display-lg text-on-surface">1,248</span>
+                    </div>
+                    <div class="mt-sm relative z-10">
+                        <span class="font-code-sm text-code-sm text-tertiary flex items-center gap-xs">
+                            <span class="material-symbols-outlined text-[14px]">trending_up</span> +24 this week
+                        </span>
+                    </div>
+                </div>
+
+                <div
+                    class="bg-surface-container-high p-lg clip-octagon border border-outline-variant/30 hover:border-secondary/50 transition-colors group relative overflow-hidden">
+                    <div class="absolute top-0 right-0 p-sm opacity-10 group-hover:opacity-20 transition-opacity">
+                        <span class="material-symbols-outlined text-6xl text-primary"
+                            style="font-variation-settings: 'FILL' 1;">workspace_premium</span>
+                    </div>
+                    <div class="flex justify-between items-start mb-lg relative z-10">
+                        <span class="font-label-mono text-label-mono text-on-surface-variant">Enterprise</span>
+                        <span class="material-symbols-outlined text-primary">workspace_premium</span>
+                    </div>
+                    <div class="relative z-10">
+                        <span class="font-display-lg text-display-lg text-on-surface">164</span>
+                    </div>
+                    <div class="mt-sm relative z-10">
+                        <span class="font-code-sm text-code-sm text-on-surface-variant">High-value accounts</span>
+                    </div>
+                </div>
+
+                <div
+                    class="bg-surface-container-high p-lg clip-octagon border border-outline-variant/30 hover:border-secondary/50 transition-colors group relative overflow-hidden">
+                    <div class="absolute top-0 right-0 p-sm opacity-10 group-hover:opacity-20 transition-opacity">
+                        <span class="material-symbols-outlined text-6xl text-secondary"
+                            style="font-variation-settings: 'FILL' 1;">mail</span>
+                    </div>
+                    <div class="flex justify-between items-start mb-lg relative z-10">
+                        <span class="font-label-mono text-label-mono text-on-surface-variant">Pending Invites</span>
+                        <span class="material-symbols-outlined text-secondary">mail</span>
+                    </div>
+                    <div class="relative z-10">
+                        <span class="font-display-lg text-display-lg text-on-surface">38</span>
+                    </div>
+                    <div class="mt-sm relative z-10">
+                        <span class="font-code-sm text-code-sm text-secondary flex items-center gap-xs">
+                            <span class="material-symbols-outlined text-[14px]">mark_email_unread</span> Awaiting
+                            acceptance
+                        </span>
+                    </div>
+                </div>
+
+                <div
+                    class="bg-surface-container-high p-lg clip-octagon border border-outline-variant/30 hover:border-secondary/50 transition-colors group relative overflow-hidden">
+                    <div class="absolute top-0 right-0 p-sm opacity-10 group-hover:opacity-20 transition-opacity">
+                        <span class="material-symbols-outlined text-6xl text-error"
+                            style="font-variation-settings: 'FILL' 1;">block</span>
+                    </div>
+                    <div class="flex justify-between items-start mb-lg relative z-10">
+                        <span class="font-label-mono text-label-mono text-on-surface-variant">Suspended</span>
+                        <span class="material-symbols-outlined text-error">block</span>
+                    </div>
+                    <div class="relative z-10">
+                        <span class="font-display-lg text-display-lg text-on-surface">12</span>
+                    </div>
+                    <div class="mt-sm relative z-10">
+                        <span class="font-code-sm text-code-sm text-on-surface-variant">Requires follow-up</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-surface-container-high p-lg clip-octagon border border-outline-variant/30 mt-xl space-y-lg">
+                <div
+                    class="flex flex-col lg:flex-row lg:items-center justify-between gap-md pb-sm border-b border-outline-variant/30">
+                    <div>
+                        <h3 class="font-headline-md text-headline-md text-on-surface">Registered Users</h3>
+                        <p class="font-body-md text-body-md text-on-surface-variant mt-xs">Prototype table with quick
+                            actions and detail preview.</p>
+                    </div>
+                    <div class="flex flex-wrap gap-sm text-sm">
+                        <span class="px-sm py-xs clip-octagon bg-surface-container-highest text-on-surface">All</span>
+                        <span
+                            class="px-sm py-xs clip-octagon border border-outline-variant text-on-surface-variant">Starter</span>
+                        <span
+                            class="px-sm py-xs clip-octagon border border-outline-variant text-on-surface-variant">Scale</span>
+                        <span
+                            class="px-sm py-xs clip-octagon border border-outline-variant text-on-surface-variant">Enterprise</span>
+                    </div>
+                </div>
+
+                <div class="overflow-x-auto">
+                    <table class="w-full min-w-[860px] text-left border-collapse font-body-md text-body-md">
+                        <thead>
+                            <tr
+                                class="font-label-mono text-label-mono text-on-surface-variant border-b border-outline-variant/30">
+                                <th class="pb-sm font-medium">Name</th>
+                                <th class="pb-sm font-medium">Email</th>
+                                <th class="pb-sm font-medium">Plan</th>
+                                <th class="pb-sm font-medium">Status</th>
+                                <th class="pb-sm font-medium text-right">Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr
+                                class="border-b border-outline-variant/10 hover:bg-surface-variant/30 transition-colors">
+                                <td class="py-md">
+                                    <div>
+                                        <p class="text-on-surface font-semibold">Lucia Moreno</p>
+                                        <p class="text-on-surface-variant text-sm">Operations Director</p>
+                                    </div>
+                                </td>
+                                <td class="py-md text-on-surface-variant">lucia@vectra.ai</td>
+                                <td class="py-md"><span
+                                        class="inline-flex px-sm py-xs bg-secondary-container text-on-secondary-container clip-octagon text-sm">Enterprise</span>
+                                </td>
+                                <td class="py-md"><span
+                                        class="inline-flex items-center gap-xs text-tertiary font-code-sm"><span
+                                            class="w-2 h-2 rounded-full bg-tertiary"></span>Active</span></td>
+                                <td class="py-md text-right">
+                                    <details class="relative inline-block text-left">
+                                        <summary
+                                            class="list-none cursor-pointer text-on-surface-variant hover:text-secondary">
+                                            <span class="material-symbols-outlined">more_vert</span>
+                                        </summary>
+                                        <div
+                                            class="absolute right-0 mt-sm w-40 clip-octagon border border-outline-variant/30 bg-surface-container-highest p-xs shadow-xl">
+                                            <button
+                                                class="w-full text-left px-sm py-sm hover:bg-surface-variant rounded text-on-surface">Ver
+                                                detalle</button>
+                                            <button
+                                                class="w-full text-left px-sm py-sm hover:bg-surface-variant rounded text-error">Eliminar</button>
+                                        </div>
+                                    </details>
+                                </td>
+                            </tr>
+                            <tr
+                                class="border-b border-outline-variant/10 hover:bg-surface-variant/30 transition-colors">
+                                <td class="py-md">
+                                    <div>
+                                        <p class="text-on-surface font-semibold">Hugo Serra</p>
+                                        <p class="text-on-surface-variant text-sm">Growth Lead</p>
+                                    </div>
+                                </td>
+                                <td class="py-md text-on-surface-variant">hugo@northsignal.io</td>
+                                <td class="py-md"><span
+                                        class="inline-flex px-sm py-xs bg-primary-container text-on-primary-container clip-octagon text-sm">Scale</span>
+                                </td>
+                                <td class="py-md"><span
+                                        class="inline-flex items-center gap-xs text-secondary font-code-sm"><span
+                                            class="w-2 h-2 rounded-full bg-secondary"></span>Invited</span></td>
+                                <td class="py-md text-right">
+                                    <details class="relative inline-block text-left">
+                                        <summary
+                                            class="list-none cursor-pointer text-on-surface-variant hover:text-secondary">
+                                            <span class="material-symbols-outlined">more_vert</span>
+                                        </summary>
+                                        <div
+                                            class="absolute right-0 mt-sm w-40 clip-octagon border border-outline-variant/30 bg-surface-container-highest p-xs shadow-xl">
+                                            <button
+                                                class="w-full text-left px-sm py-sm hover:bg-surface-variant rounded text-on-surface">Ver
+                                                detalle</button>
+                                            <button
+                                                class="w-full text-left px-sm py-sm hover:bg-surface-variant rounded text-error">Eliminar</button>
+                                        </div>
+                                    </details>
+                                </td>
+                            </tr>
+                            <tr class="hover:bg-surface-variant/30 transition-colors">
+                                <td class="py-md">
+                                    <div>
+                                        <p class="text-on-surface font-semibold">Nora Vidal</p>
+                                        <p class="text-on-surface-variant text-sm">Customer Success</p>
+                                    </div>
+                                </td>
+                                <td class="py-md text-on-surface-variant">nora@atlasops.com</td>
+                                <td class="py-md"><span
+                                        class="inline-flex px-sm py-xs bg-surface-container-highest text-on-surface clip-octagon text-sm">Starter</span>
+                                </td>
+                                <td class="py-md"><span
+                                        class="inline-flex items-center gap-xs text-error font-code-sm"><span
+                                            class="w-2 h-2 rounded-full bg-error"></span>Suspended</span></td>
+                                <td class="py-md text-right">
+                                    <details class="relative inline-block text-left">
+                                        <summary
+                                            class="list-none cursor-pointer text-on-surface-variant hover:text-secondary">
+                                            <span class="material-symbols-outlined">more_vert</span>
+                                        </summary>
+                                        <div
+                                            class="absolute right-0 mt-sm w-40 clip-octagon border border-outline-variant/30 bg-surface-container-highest p-xs shadow-xl">
+                                            <button
+                                                class="w-full text-left px-sm py-sm hover:bg-surface-variant rounded text-on-surface">Ver
+                                                detalle</button>
+                                            <button
+                                                class="w-full text-left px-sm py-sm hover:bg-surface-variant rounded text-error">Eliminar</button>
+                                        </div>
+                                    </details>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="bg-surface-container-high p-lg clip-octagon border border-outline-variant/30 max-w-3xl">
+                <div class="flex items-center justify-between gap-md mb-md">
+                    <div>
+                        <p class="font-code-sm text-code-sm text-secondary uppercase tracking-[0.3em]">Modal Preview</p>
+                        <h3 class="font-headline-md text-headline-md text-on-surface mt-xs">User Detail</h3>
+                    </div>
+                    <button class="text-on-surface-variant hover:text-on-surface">
+                        <span class="material-symbols-outlined">close</span>
+                    </button>
+                </div>
+                <div class="grid sm:grid-cols-2 gap-md text-sm">
+                    <div class="bg-surface-container-highest p-md clip-octagon">
+                        <p class="text-on-surface-variant">Full Name</p>
+                        <p class="text-on-surface mt-xs">Lucia Moreno</p>
+                    </div>
+                    <div class="bg-surface-container-highest p-md clip-octagon">
+                        <p class="text-on-surface-variant">Workspace</p>
+                        <p class="text-on-surface mt-xs">Vectra AI</p>
+                    </div>
+                    <div class="bg-surface-container-highest p-md clip-octagon">
+                        <p class="text-on-surface-variant">Role</p>
+                        <p class="text-on-surface mt-xs">Operations Director</p>
+                    </div>
+                    <div class="bg-surface-container-highest p-md clip-octagon">
+                        <p class="text-on-surface-variant">Last Login</p>
+                        <p class="text-on-surface mt-xs">17 Jun 2026 · 09:42 CET</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="/layout.js"></script>
+</body>
+
+</html>

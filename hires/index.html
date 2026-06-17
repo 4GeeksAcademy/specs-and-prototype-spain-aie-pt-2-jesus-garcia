@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>AgentHub Hires</title>
+    <script src="/theme.js"></script>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script src="/tailwind-config.js"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap"
+        rel="stylesheet" />
+    <link href="/styles.css" rel="stylesheet" />
+</head>
+
+<body class="bg-background text-on-background font-body-md min-h-screen flex overflow-hidden">
+    <div data-layout-sidebar></div>
+    <main class="flex-1 flex flex-col md:ml-[260px] h-screen bg-pattern relative">
+        <div data-layout-topbar></div>
+        <div class="flex-1 overflow-y-auto p-container-margin md:p-xl space-y-xl z-10">
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-md">
+                <div>
+                    <h2 class="font-headline-lg text-headline-lg-mobile sm:text-headline-lg text-on-surface">Agent
+                        Rental Contracts</h2>
+                    <p class="font-body-md text-body-md text-on-surface-variant mt-xs">Prototype ledger for active and
+                        historical rentals, including contracted skills and total paid amount.</p>
+                </div>
+                <div class="flex items-center gap-sm"><span
+                        class="px-sm py-xs clip-octagon bg-secondary-container text-on-secondary-container font-code-sm text-code-sm">27
+                        active</span></div>
+            </div>
+
+            <div class="bg-surface-container-high p-lg clip-octagon border border-outline-variant/30 mt-xl space-y-lg">
+                <div class="flex items-center justify-between gap-md pb-sm border-b border-outline-variant/30">
+                    <div>
+                        <h3 class="font-headline-md text-headline-md text-on-surface">Contracts</h3>
+                        <p class="font-body-md text-body-md text-on-surface-variant mt-xs">Rental agreements and
+                            monetized skill bundles.</p>
+                    </div>
+                </div>
+                <div class="overflow-x-auto">
+                    <table class="w-full min-w-[1080px] text-left border-collapse font-body-md text-body-md">
+                        <thead>
+                            <tr
+                                class="font-label-mono text-label-mono text-on-surface-variant border-b border-outline-variant/30">
+                                <th class="pb-sm font-medium">Client</th>
+                                <th class="pb-sm font-medium">Agent</th>
+                                <th class="pb-sm font-medium">Skills</th>
+                                <th class="pb-sm font-medium">Contract Dates</th>
+                                <th class="pb-sm font-medium">Total Paid</th>
+                                <th class="pb-sm font-medium text-right">Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr
+                                class="border-b border-outline-variant/10 hover:bg-surface-variant/30 transition-colors">
+                                <td class="py-md text-on-surface">Nova Retail</td>
+                                <td class="py-md text-on-surface-variant">Contract Sentinel</td>
+                                <td class="py-md text-on-surface-variant">Document Reader, Pricing Parser, Calendar Sync
+                                </td>
+                                <td class="py-md text-on-surface-variant">01 Jun 2026 → 30 Sep 2026</td>
+                                <td class="py-md text-on-surface">€14,800</td>
+                                <td class="py-md text-right">
+                                    <details class="relative inline-block text-left">
+                                        <summary
+                                            class="list-none cursor-pointer text-on-surface-variant hover:text-secondary">
+                                            <span class="material-symbols-outlined">more_vert</span></summary>
+                                        <div
+                                            class="absolute right-0 mt-sm w-40 clip-octagon border border-outline-variant/30 bg-surface-container-highest p-xs shadow-xl">
+                                            <button
+                                                class="w-full text-left px-sm py-sm hover:bg-surface-variant rounded text-on-surface">Ver
+                                                detalle</button></div>
+                                    </details>
+                                </td>
+                            </tr>
+                            <tr
+                                class="border-b border-outline-variant/10 hover:bg-surface-variant/30 transition-colors">
+                                <td class="py-md text-on-surface">Altamar Health</td>
+                                <td class="py-md text-on-surface-variant">Ops Router</td>
+                                <td class="py-md text-on-surface-variant">Web Navigator, Calendar Sync</td>
+                                <td class="py-md text-on-surface-variant">15 Feb 2026 → 15 May 2026</td>
+                                <td class="py-md text-on-surface">€8,200</td>
+                                <td class="py-md text-right">
+                                    <details class="relative inline-block text-left">
+                                        <summary
+                                            class="list-none cursor-pointer text-on-surface-variant hover:text-secondary">
+                                            <span class="material-symbols-outlined">more_vert</span></summary>
+                                        <div
+                                            class="absolute right-0 mt-sm w-40 clip-octagon border border-outline-variant/30 bg-surface-container-highest p-xs shadow-xl">
+                                            <button
+                                                class="w-full text-left px-sm py-sm hover:bg-surface-variant rounded text-on-surface">Ver
+                                                detalle</button></div>
+                                    </details>
+                                </td>
+                            </tr>
+                            <tr class="hover:bg-surface-variant/30 transition-colors">
+                                <td class="py-md text-on-surface">Terra Metrics</td>
+                                <td class="py-md text-on-surface-variant">Revenue Watchdog</td>
+                                <td class="py-md text-on-surface-variant">ERP Sync, Anomaly Alerting</td>
+                                <td class="py-md text-on-surface-variant">10 Jan 2026 → 10 Jan 2027</td>
+                                <td class="py-md text-on-surface">€21,500</td>
+                                <td class="py-md text-right">
+                                    <details class="relative inline-block text-left">
+                                        <summary
+                                            class="list-none cursor-pointer text-on-surface-variant hover:text-secondary">
+                                            <span class="material-symbols-outlined">more_vert</span></summary>
+                                        <div
+                                            class="absolute right-0 mt-sm w-40 clip-octagon border border-outline-variant/30 bg-surface-container-highest p-xs shadow-xl">
+                                            <button
+                                                class="w-full text-left px-sm py-sm hover:bg-surface-variant rounded text-on-surface">Ver
+                                                detalle</button></div>
+                                    </details>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="bg-surface-container-high p-lg clip-octagon border border-outline-variant/30 max-w-4xl">
+                <div class="flex items-center justify-between gap-md mb-md">
+                    <div>
+                        <p class="font-code-sm text-code-sm text-secondary uppercase tracking-[0.3em]">Modal Preview</p>
+                        <h3 class="font-headline-md text-headline-md text-on-surface mt-xs">Contract Breakdown</h3>
+                    </div><button class="text-on-surface-variant hover:text-on-surface"><span
+                            class="material-symbols-outlined">close</span></button>
+                </div>
+                <div class="space-y-sm">
+                    <div class="flex items-center justify-between bg-surface-container-highest p-md clip-octagon">
+                        <span>Document Reader</span><span class="font-code-sm">€4,500</span></div>
+                    <div class="flex items-center justify-between bg-surface-container-highest p-md clip-octagon">
+                        <span>Pricing Parser</span><span class="font-code-sm">€5,200</span></div>
+                    <div class="flex items-center justify-between bg-surface-container-highest p-md clip-octagon">
+                        <span>Calendar Sync</span><span class="font-code-sm">€2,100</span></div>
+                    <div class="flex items-center justify-between bg-surface-container-highest p-md clip-octagon">
+                        <span>Managed Service Fee</span><span class="font-code-sm">€3,000</span></div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="/layout.js"></script>
+</body>
+
+</html>

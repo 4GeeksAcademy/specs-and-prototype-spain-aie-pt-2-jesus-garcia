@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>AgentHub Agents</title>
+    <script src="/theme.js"></script>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script src="/tailwind-config.js"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap"
+        rel="stylesheet" />
+    <link href="/styles.css" rel="stylesheet" />
+</head>
+
+<body class="bg-background text-on-background font-body-md min-h-screen flex overflow-hidden">
+    <div data-layout-sidebar></div>
+    <main class="flex-1 flex flex-col md:ml-[260px] h-screen bg-pattern relative">
+        <div data-layout-topbar></div>
+        <div class="flex-1 overflow-y-auto p-container-margin md:p-xl space-y-xl z-10">
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-md">
+                <div>
+                    <h2 class="font-headline-lg text-headline-lg-mobile sm:text-headline-lg text-on-surface">Agent Fleet
+                    </h2>
+                    <p class="font-body-md text-body-md text-on-surface-variant mt-xs">Inventory of deployed agents,
+                        operational status and attached skills.</p>
+                </div>
+                <div class="flex items-center gap-sm">
+                    <span
+                        class="px-sm py-xs clip-octagon bg-secondary-container text-on-secondary-container font-code-sm text-code-sm">24
+                        active</span>
+                    <button
+                        class="px-md py-sm bg-primary-container text-on-primary-container font-label-mono text-label-mono clip-octagon">Deploy
+                        Agent</button>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-gutter">
+                <div
+                    class="bg-surface-container-high p-lg clip-octagon border border-outline-variant/30 hover:border-secondary/50 transition-colors group relative overflow-hidden">
+                    <div class="absolute top-0 right-0 p-sm opacity-10 group-hover:opacity-20 transition-opacity"><span
+                            class="material-symbols-outlined text-6xl text-secondary"
+                            style="font-variation-settings: 'FILL' 1;">smart_toy</span></div>
+                    <div class="flex justify-between items-start mb-lg relative z-10"><span
+                            class="font-label-mono text-label-mono text-on-surface-variant">Active Agents</span><span
+                            class="material-symbols-outlined text-secondary">smart_toy</span></div>
+                    <div class="relative z-10"><span class="font-display-lg text-display-lg text-on-surface">24</span>
+                    </div>
+                    <div class="mt-sm relative z-10"><span class="font-code-sm text-code-sm text-tertiary">+2 from
+                            yesterday</span></div>
+                </div>
+                <div
+                    class="bg-surface-container-high p-lg clip-octagon border border-outline-variant/30 hover:border-secondary/50 transition-colors group relative overflow-hidden">
+                    <div class="absolute top-0 right-0 p-sm opacity-10 group-hover:opacity-20 transition-opacity"><span
+                            class="material-symbols-outlined text-6xl text-primary"
+                            style="font-variation-settings: 'FILL' 1;">bolt</span></div>
+                    <div class="flex justify-between items-start mb-lg relative z-10"><span
+                            class="font-label-mono text-label-mono text-on-surface-variant">Skills Attached</span><span
+                            class="material-symbols-outlined text-primary">bolt</span></div>
+                    <div class="relative z-10"><span class="font-display-lg text-display-lg text-on-surface">86</span>
+                    </div>
+                    <div class="mt-sm relative z-10"><span
+                            class="font-code-sm text-code-sm text-on-surface-variant">Across all deployments</span>
+                    </div>
+                </div>
+                <div
+                    class="bg-surface-container-high p-lg clip-octagon border border-outline-variant/30 hover:border-secondary/50 transition-colors group relative overflow-hidden">
+                    <div class="absolute top-0 right-0 p-sm opacity-10 group-hover:opacity-20 transition-opacity"><span
+                            class="material-symbols-outlined text-6xl text-error"
+                            style="font-variation-settings: 'FILL' 1;">warning</span></div>
+                    <div class="flex justify-between items-start mb-lg relative z-10"><span
+                            class="font-label-mono text-label-mono text-on-surface-variant">Failing</span><span
+                            class="material-symbols-outlined text-error">warning</span></div>
+                    <div class="relative z-10"><span class="font-display-lg text-display-lg text-on-surface">3</span>
+                    </div>
+                    <div class="mt-sm relative z-10"><span class="font-code-sm text-code-sm text-error">Requires
+                            action</span></div>
+                </div>
+                <div
+                    class="bg-surface-container-high p-lg clip-octagon border border-outline-variant/30 hover:border-secondary/50 transition-colors group relative overflow-hidden">
+                    <div class="absolute top-0 right-0 p-sm opacity-10 group-hover:opacity-20 transition-opacity"><span
+                            class="material-symbols-outlined text-6xl text-tertiary"
+                            style="font-variation-settings: 'FILL' 1;">hub</span></div>
+                    <div class="flex justify-between items-start mb-lg relative z-10"><span
+                            class="font-label-mono text-label-mono text-on-surface-variant">Owners</span><span
+                            class="material-symbols-outlined text-tertiary">hub</span></div>
+                    <div class="relative z-10"><span class="font-display-lg text-display-lg text-on-surface">14</span>
+                    </div>
+                    <div class="mt-sm relative z-10"><span
+                            class="font-code-sm text-code-sm text-on-surface-variant">Organizations connected</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-surface-container-high p-lg clip-octagon border border-outline-variant/30 mt-xl space-y-lg">
+                <div
+                    class="flex flex-col lg:flex-row lg:items-center justify-between gap-md pb-sm border-b border-outline-variant/30">
+                    <div>
+                        <h3 class="font-headline-md text-headline-md text-on-surface">Registered Agents</h3>
+                        <p class="font-body-md text-body-md text-on-surface-variant mt-xs">Shared table layout adapted
+                            for agent operations.</p>
+                    </div>
+                    <div class="flex flex-wrap gap-sm text-sm">
+                        <span class="px-sm py-xs clip-octagon bg-surface-container-highest text-on-surface">All</span>
+                        <span
+                            class="px-sm py-xs clip-octagon border border-outline-variant text-on-surface-variant">Active</span>
+                        <span
+                            class="px-sm py-xs clip-octagon border border-outline-variant text-on-surface-variant">Inactive</span>
+                        <span
+                            class="px-sm py-xs clip-octagon border border-outline-variant text-on-surface-variant">Failing</span>
+                    </div>
+                </div>
+
+                <div class="overflow-x-auto">
+                    <table class="w-full min-w-[980px] text-left border-collapse font-body-md text-body-md">
+                        <thead>
+                            <tr
+                                class="font-label-mono text-label-mono text-on-surface-variant border-b border-outline-variant/30">
+                                <th class="pb-sm font-medium">Agent</th>
+                                <th class="pb-sm font-medium">Owner</th>
+                                <th class="pb-sm font-medium">Status</th>
+                                <th class="pb-sm font-medium">Skills</th>
+                                <th class="pb-sm font-medium text-right">Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr
+                                class="border-b border-outline-variant/10 hover:bg-surface-variant/30 transition-colors align-top">
+                                <td class="py-md">
+                                    <p class="text-on-surface font-semibold">Contract Sentinel</p>
+                                    <p class="text-on-surface-variant text-sm">AGT-2401</p>
+                                </td>
+                                <td class="py-md text-on-surface-variant">Lucia Moreno</td>
+                                <td class="py-md"><span
+                                        class="inline-flex items-center gap-xs text-tertiary font-code-sm"><span
+                                            class="w-2 h-2 rounded-full bg-tertiary"></span>Active</span></td>
+                                <td class="py-md">
+                                    <details class="group">
+                                        <summary
+                                            class="list-none cursor-pointer text-secondary font-code-sm flex items-center gap-xs">
+                                            <span
+                                                class="material-symbols-outlined text-[16px] transition-transform group-open:rotate-90">chevron_right</span>4
+                                            attached skills</summary>
+                                        <div class="mt-sm flex flex-wrap gap-xs pl-lg transition-all duration-300">
+                                            <span
+                                                class="px-sm py-xs bg-surface-container-highest clip-octagon text-sm">Document
+                                                Reader</span>
+                                            <span
+                                                class="px-sm py-xs bg-surface-container-highest clip-octagon text-sm">Pricing
+                                                Parser</span>
+                                            <span
+                                                class="px-sm py-xs bg-surface-container-highest clip-octagon text-sm">Calendar
+                                                Sync</span>
+                                            <span
+                                                class="px-sm py-xs bg-surface-container-highest clip-octagon text-sm">Email
+                                                Drafting</span>
+                                        </div>
+                                    </details>
+                                </td>
+                                <td class="py-md text-right">
+                                    <details class="relative inline-block text-left">
+                                        <summary
+                                            class="list-none cursor-pointer text-on-surface-variant hover:text-secondary">
+                                            <span class="material-symbols-outlined">more_vert</span></summary>
+                                        <div
+                                            class="absolute right-0 mt-sm w-44 clip-octagon border border-outline-variant/30 bg-surface-container-highest p-xs shadow-xl">
+                                            <button
+                                                class="w-full text-left px-sm py-sm hover:bg-surface-variant rounded text-on-surface">Configurar</button><button
+                                                class="w-full text-left px-sm py-sm hover:bg-surface-variant rounded text-error">Eliminar</button>
+                                        </div>
+                                    </details>
+                                </td>
+                            </tr>
+                            <tr
+                                class="border-b border-outline-variant/10 hover:bg-surface-variant/30 transition-colors align-top">
+                                <td class="py-md">
+                                    <p class="text-on-surface font-semibold">Ops Router</p>
+                                    <p class="text-on-surface-variant text-sm">AGT-1830</p>
+                                </td>
+                                <td class="py-md text-on-surface-variant">Hugo Serra</td>
+                                <td class="py-md"><span
+                                        class="inline-flex items-center gap-xs text-secondary font-code-sm"><span
+                                            class="w-2 h-2 rounded-full bg-secondary"></span>Inactive</span></td>
+                                <td class="py-md">
+                                    <details>
+                                        <summary
+                                            class="list-none cursor-pointer text-secondary font-code-sm flex items-center gap-xs">
+                                            <span class="material-symbols-outlined text-[16px]">chevron_right</span>3
+                                            attached skills</summary>
+                                    </details>
+                                </td>
+                                <td class="py-md text-right">
+                                    <details class="relative inline-block text-left">
+                                        <summary
+                                            class="list-none cursor-pointer text-on-surface-variant hover:text-secondary">
+                                            <span class="material-symbols-outlined">more_vert</span></summary>
+                                        <div
+                                            class="absolute right-0 mt-sm w-44 clip-octagon border border-outline-variant/30 bg-surface-container-highest p-xs shadow-xl">
+                                            <button
+                                                class="w-full text-left px-sm py-sm hover:bg-surface-variant rounded text-on-surface">Configurar</button><button
+                                                class="w-full text-left px-sm py-sm hover:bg-surface-variant rounded text-error">Eliminar</button>
+                                        </div>
+                                    </details>
+                                </td>
+                            </tr>
+                            <tr class="align-top hover:bg-surface-variant/30 transition-colors">
+                                <td class="py-md">
+                                    <p class="text-on-surface font-semibold">Revenue Watchdog</p>
+                                    <p class="text-on-surface-variant text-sm">AGT-3017</p>
+                                </td>
+                                <td class="py-md text-on-surface-variant">Nora Vidal</td>
+                                <td class="py-md"><span
+                                        class="inline-flex items-center gap-xs text-error font-code-sm"><span
+                                            class="w-2 h-2 rounded-full bg-error"></span>Failing</span></td>
+                                <td class="py-md">
+                                    <details open class="group">
+                                        <summary
+                                            class="list-none cursor-pointer text-secondary font-code-sm flex items-center gap-xs">
+                                            <span
+                                                class="material-symbols-outlined text-[16px] transition-transform group-open:rotate-90">chevron_right</span>2
+                                            attached skills</summary>
+                                        <div class="mt-sm flex flex-wrap gap-xs pl-lg transition-all duration-300"><span
+                                                class="px-sm py-xs bg-error-container text-on-error-container clip-octagon text-sm">ERP
+                                                Sync</span><span
+                                                class="px-sm py-xs bg-surface-container-highest clip-octagon text-sm">Anomaly
+                                                Alerting</span></div>
+                                    </details>
+                                </td>
+                                <td class="py-md text-right">
+                                    <details class="relative inline-block text-left">
+                                        <summary
+                                            class="list-none cursor-pointer text-on-surface-variant hover:text-secondary">
+                                            <span class="material-symbols-outlined">more_vert</span></summary>
+                                        <div
+                                            class="absolute right-0 mt-sm w-44 clip-octagon border border-outline-variant/30 bg-surface-container-highest p-xs shadow-xl">
+                                            <button
+                                                class="w-full text-left px-sm py-sm hover:bg-surface-variant rounded text-on-surface">Configurar</button><button
+                                                class="w-full text-left px-sm py-sm hover:bg-surface-variant rounded text-error">Eliminar</button>
+                                        </div>
+                                    </details>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="bg-surface-container-high p-lg clip-octagon border border-outline-variant/30 max-w-4xl">
+                <div class="flex items-center justify-between gap-md mb-md">
+                    <div>
+                        <p class="font-code-sm text-code-sm text-secondary uppercase tracking-[0.3em]">Modal Preview</p>
+                        <h3 class="font-headline-md text-headline-md text-on-surface mt-xs">System Prompt</h3>
+                    </div>
+                    <button class="text-on-surface-variant hover:text-on-surface"><span
+                            class="material-symbols-outlined">close</span></button>
+                </div>
+                <pre
+                    class="bg-surface-container-highest p-md clip-octagon text-sm text-on-surface-variant whitespace-pre-wrap">You are Contract Sentinel. Review inbound legal and procurement documents, extract pricing clauses, identify risk anomalies and escalate blockers before contract execution.</pre>
+            </div>
+        </div>
+    </main>
+    <script src="/layout.js"></script>
+</body>
+
+</html>
