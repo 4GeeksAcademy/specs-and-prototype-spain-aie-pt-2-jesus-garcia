@@ -1,0 +1,92 @@
+tailwind.config = {
+    darkMode: "class",
+    theme: {
+        extend: {
+            colors: {
+                "secondary-fixed-dim": "var(--color-secondary-fixed-dim)",
+                "on-secondary": "var(--color-on-secondary)",
+                "outline": "var(--color-outline)",
+                "surface-container-low": "var(--color-surface-container-low)",
+                "primary": "var(--color-primary)",
+                "surface-container": "var(--color-surface-container)",
+                "primary-fixed": "var(--color-primary-fixed)",
+                "on-tertiary": "var(--color-on-tertiary)",
+                "inverse-primary": "var(--color-inverse-primary)",
+                "surface-container-high": "var(--color-surface-container-high)",
+                "primary-fixed-dim": "var(--color-primary-fixed-dim)",
+                "on-surface": "var(--color-on-surface)",
+                "background": "var(--color-background)",
+                "on-secondary-container": "var(--color-on-secondary-container)",
+                "tertiary-fixed": "var(--color-tertiary-fixed)",
+                "tertiary": "var(--color-tertiary)",
+                "error-container": "var(--color-error-container)",
+                "on-tertiary-fixed": "var(--color-on-tertiary-fixed)",
+                "secondary-container": "var(--color-secondary-container)",
+                "on-surface-variant": "var(--color-on-surface-variant)",
+                "on-error-container": "var(--color-on-error-container)",
+                "surface-variant": "var(--color-surface-variant)",
+                "on-secondary-fixed-variant": "var(--color-on-secondary-fixed-variant)",
+                "on-secondary-fixed": "var(--color-on-secondary-fixed)",
+                "surface-dim": "var(--color-surface-dim)",
+                "surface-bright": "var(--color-surface-bright)",
+                "on-primary": "var(--color-on-primary)",
+                "primary-container": "var(--color-primary-container)",
+                "on-background": "var(--color-on-background)",
+                "surface-container-highest": "var(--color-surface-container-highest)",
+                "surface": "var(--color-surface)",
+                "surface-container-lowest": "var(--color-surface-container-lowest)",
+                "tertiary-container": "var(--color-tertiary-container)",
+                "on-tertiary-fixed-variant": "var(--color-on-tertiary-fixed-variant)",
+                "tertiary-fixed-dim": "var(--color-tertiary-fixed-dim)",
+                "on-primary-container": "var(--color-on-primary-container)",
+                "inverse-on-surface": "var(--color-inverse-on-surface)",
+                "on-primary-fixed": "var(--color-on-primary-fixed)",
+                "secondary-fixed": "var(--color-secondary-fixed)",
+                "inverse-surface": "var(--color-inverse-surface)",
+                "secondary": "var(--color-secondary)",
+                "outline-variant": "var(--color-outline-variant)",
+                "on-tertiary-container": "var(--color-on-tertiary-container)",
+                "surface-tint": "var(--color-surface-tint)",
+                "on-primary-fixed-variant": "var(--color-on-primary-fixed-variant)",
+                "on-error": "var(--color-on-error)",
+                "error": "var(--color-error)"
+            },
+            borderRadius: {
+                "DEFAULT": "0.25rem",
+                "lg": "0.5rem",
+                "xl": "0.75rem",
+                "full": "9999px"
+            },
+            spacing: {
+                "xl": "32px",
+                "gutter": "16px",
+                "sm": "8px",
+                "container-margin": "24px",
+                "md": "16px",
+                "base": "16px",
+                "lg": "24px",
+                "xs": "4px"
+            },
+            fontFamily: {
+                "code-sm": ["JetBrains Mono"],
+                "display-lg": ["Inter"],
+                "body-lg": ["Inter"],
+                "headline-md": ["Inter"],
+                "headline-lg-mobile": ["Inter"],
+                "headline-lg": ["Inter"],
+                "body-md": ["Inter"],
+                "label-mono": ["JetBrains Mono"]
+            },
+            fontSize: {
+                "code-sm": ["12px", { lineHeight: "16px", fontWeight: "400" }],
+                "display-lg": ["48px", { lineHeight: "56px", letterSpacing: "-0.02em", fontWeight: "700" }],
+                "body-lg": ["18px", { lineHeight: "28px", fontWeight: "400" }],
+                "headline-md": ["24px", { lineHeight: "32px", fontWeight: "600" }],
+                "headline-lg-mobile": ["24px", { lineHeight: "32px", fontWeight: "600" }],
+                "headline-lg": ["32px", { lineHeight: "40px", letterSpacing: "-0.01em", fontWeight: "600" }],
+                "body-md": ["16px", { lineHeight: "24px", fontWeight: "400" }],
+                "label-mono": ["14px", { lineHeight: "20px", letterSpacing: "0.02em", fontWeight: "500" }]
+            }
+        }
+    }
+};

@@ -1,0 +1,78 @@
+<nav class="hidden md:flex flex-col h-full py-lg bg-surface-container-low dark:bg-surface-container-low fixed left-0 top-0 w-[260px] border-r border-outline-variant dark:border-outline-variant z-40"
+    aria-label="Primary">
+    <div class="px-lg mb-xl">
+        <h1 class="font-headline-md text-headline-md text-primary tracking-tighter">AgentHub</h1>
+        <p class="font-code-sm text-code-sm text-on-surface-variant opacity-70">Orchestration Engine</p>
+    </div>
+    <div class="px-md mb-lg">
+        <button
+            class="w-full py-sm px-md bg-primary-container text-on-primary-container font-label-mono text-label-mono clip-octagon hover:opacity-90 transition-opacity flex items-center justify-center gap-sm">
+            <span class="material-symbols-outlined text-[18px]">add</span>
+            Deploy New Agent
+        </button>
+    </div>
+    <div class="flex-1 overflow-y-auto overflow-x-hidden font-label-mono text-label-mono">
+        <ul class="flex flex-col gap-[2px]">
+            <li>
+                <a class="flex items-center gap-sm px-md py-sm opacity-70 hover:bg-surface-variant dark:hover:bg-surface-variant hover:opacity-100 transition-all duration-200 text-on-surface-variant dark:text-on-surface-variant"
+                    data-nav-item="dashboard" href="/">
+                    <span class="material-symbols-outlined" data-icon="dashboard">dashboard</span>
+                    Dashboard
+                </a>
+            </li>
+            <li>
+                <a class="flex items-center gap-sm px-md py-sm opacity-70 hover:bg-surface-variant dark:hover:bg-surface-variant hover:opacity-100 transition-all duration-200 text-on-surface-variant dark:text-on-surface-variant"
+                    data-nav-item="users" href="/users/">
+                    <span class="material-symbols-outlined" data-icon="group">group</span>
+                    Users
+                </a>
+            </li>
+            <li>
+                <a class="flex items-center gap-sm px-md py-sm opacity-70 hover:bg-surface-variant dark:hover:bg-surface-variant hover:opacity-100 transition-all duration-200 text-on-surface-variant dark:text-on-surface-variant"
+                    data-nav-item="agents" href="/agents/">
+                    <span class="material-symbols-outlined" data-icon="smart_toy">smart_toy</span>
+                    Agents
+                </a>
+            </li>
+            <li>
+                <a class="flex items-center gap-sm px-md py-sm opacity-70 hover:bg-surface-variant dark:hover:bg-surface-variant hover:opacity-100 transition-all duration-200 text-on-surface-variant dark:text-on-surface-variant"
+                    data-nav-item="skills" href="/skills/">
+                    <span class="material-symbols-outlined" data-icon="psychology">psychology</span>
+                    Skills
+                </a>
+            </li>
+            <li>
+                <a class="flex items-center gap-sm px-md py-sm opacity-70 hover:bg-surface-variant dark:hover:bg-surface-variant hover:opacity-100 transition-all duration-200 text-on-surface-variant dark:text-on-surface-variant"
+                    data-nav-item="hires" href="/hires/">
+                    <span class="material-symbols-outlined" data-icon="work">work</span>
+                    Hires
+                </a>
+            </li>
+            <li>
+                <a class="flex items-center gap-sm px-md py-sm opacity-70 hover:bg-surface-variant dark:hover:bg-surface-variant hover:opacity-100 transition-all duration-200 text-on-surface-variant dark:text-on-surface-variant"
+                    data-nav-item="error-log" href="/error-log/">
+                    <span class="material-symbols-outlined" data-icon="terminal">terminal</span>
+                    Error Logs
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="mt-auto font-label-mono text-label-mono pt-lg border-t border-outline-variant/30">
+        <ul class="flex flex-col gap-[2px]">
+            <li>
+                <a class="flex items-center gap-sm text-on-surface-variant dark:text-on-surface-variant px-md py-sm opacity-70 hover:bg-surface-variant dark:hover:bg-surface-variant hover:opacity-100 transition-all duration-200"
+                    href="#">
+                    <span class="material-symbols-outlined" data-icon="settings">settings</span>
+                    Settings
+                </a>
+            </li>
+            <li>
+                <a class="flex items-center gap-sm text-on-surface-variant dark:text-on-surface-variant px-md py-sm opacity-70 hover:bg-surface-variant dark:hover:bg-surface-variant hover:opacity-100 transition-all duration-200"
+                    href="#">
+                    <span class="material-symbols-outlined" data-icon="help">help</span>
+                    Support
+                </a>
+            </li>
+        </ul>
+    </div>
+</nav>

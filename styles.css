@@ -1,0 +1,114 @@
+:root {
+    --color-secondary-fixed-dim: #067f94;
+    --color-on-secondary: #ffffff;
+    --color-outline: #7d8297;
+    --color-surface-container-low: #f8f9ff;
+    --color-primary: #4d44e3;
+    --color-surface-container: #eef2ff;
+    --color-primary-fixed: #e2dfff;
+    --color-on-tertiary: #ffffff;
+    --color-inverse-primary: #c3c0ff;
+    --color-surface-container-high: #e1e8fb;
+    --color-primary-fixed-dim: #c3c0ff;
+    --color-on-surface: #182033;
+    --color-background: #f4f7ff;
+    --color-on-secondary-container: #003640;
+    --color-tertiary-fixed: #6ffbbe;
+    --color-tertiary: #008a61;
+    --color-error-container: #ffdad6;
+    --color-on-tertiary-fixed: #002113;
+    --color-secondary-container: #9cefff;
+    --color-on-surface-variant: #586179;
+    --color-on-error-container: #410002;
+    --color-surface-variant: #dbe1f0;
+    --color-on-secondary-fixed-variant: #004e5c;
+    --color-on-secondary-fixed: #001f26;
+    --color-surface-dim: #d9e1f3;
+    --color-surface-bright: #ffffff;
+    --color-on-primary: #ffffff;
+    --color-primary-container: #dad7ff;
+    --color-on-background: #182033;
+    --color-surface-container-highest: #d3dbef;
+    --color-surface: #f4f7ff;
+    --color-surface-container-lowest: #ffffff;
+    --color-tertiary-container: #c9ffe4;
+    --color-on-tertiary-fixed-variant: #005236;
+    --color-tertiary-fixed-dim: #4edea3;
+    --color-on-primary-container: #1d00a5;
+    --color-inverse-on-surface: #eef2ff;
+    --color-on-primary-fixed: #0f0069;
+    --color-secondary-fixed: #acedff;
+    --color-inverse-surface: #283044;
+    --color-secondary: #008aa5;
+    --color-outline-variant: #bcc4d9;
+    --color-on-tertiary-container: #003824;
+    --color-surface-tint: #4d44e3;
+    --color-on-primary-fixed-variant: #3323cc;
+    --color-on-error: #ffffff;
+    --color-error: #ba1a1a;
+    --pattern-dot: rgba(77, 68, 227, 0.12);
+}
+
+.dark {
+    --color-secondary-fixed-dim: #4cd7f6;
+    --color-on-secondary: #003640;
+    --color-outline: #918fa1;
+    --color-surface-container-low: #131b2e;
+    --color-primary: #c3c0ff;
+    --color-surface-container: #171f33;
+    --color-primary-fixed: #e2dfff;
+    --color-on-tertiary: #003824;
+    --color-inverse-primary: #4d44e3;
+    --color-surface-container-high: #222a3d;
+    --color-primary-fixed-dim: #c3c0ff;
+    --color-on-surface: #dae2fd;
+    --color-background: #0b1326;
+    --color-on-secondary-container: #00424e;
+    --color-tertiary-fixed: #6ffbbe;
+    --color-tertiary: #4edea3;
+    --color-error-container: #93000a;
+    --color-on-tertiary-fixed: #002113;
+    --color-secondary-container: #03b5d3;
+    --color-on-surface-variant: #c7c4d8;
+    --color-on-error-container: #ffdad6;
+    --color-surface-variant: #2d3449;
+    --color-on-secondary-fixed-variant: #004e5c;
+    --color-on-secondary-fixed: #001f26;
+    --color-surface-dim: #0b1326;
+    --color-surface-bright: #31394d;
+    --color-on-primary: #1d00a5;
+    --color-primary-container: #4f46e5;
+    --color-on-background: #dae2fd;
+    --color-surface-container-highest: #2d3449;
+    --color-surface: #0b1326;
+    --color-surface-container-lowest: #060e20;
+    --color-tertiary-container: #006e4b;
+    --color-on-tertiary-fixed-variant: #005236;
+    --color-tertiary-fixed-dim: #4edea3;
+    --color-on-primary-container: #dad7ff;
+    --color-inverse-on-surface: #283044;
+    --color-on-primary-fixed: #0f0069;
+    --color-secondary-fixed: #acedff;
+    --color-inverse-surface: #dae2fd;
+    --color-secondary: #4cd7f6;
+    --color-outline-variant: #464555;
+    --color-on-tertiary-container: #67f4b7;
+    --color-surface-tint: #c3c0ff;
+    --color-on-primary-fixed-variant: #3323cc;
+    --color-on-error: #690005;
+    --color-error: #ffb4ab;
+    --pattern-dot: rgba(255, 255, 255, 0.05);
+}
+
+.clip-octagon {
+    clip-path: polygon(10px 0%, calc(100% - 10px) 0%, 100% 10px, 100% calc(100% - 10px), calc(100% - 10px) 100%, 10px 100%, 0% calc(100% - 10px), 0% 10px);
+}
+
+.glow-active {
+    box-shadow: inset 0 0 0 1px #4cd7f6, 0 0 15px rgba(6, 182, 212, 0.3);
+}
+
+.bg-pattern {
+    background-image: radial-gradient(var(--pattern-dot) 1px, transparent 1px);
+    background-size: 20px 20px;
+}
