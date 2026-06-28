@@ -189,11 +189,23 @@
                                         class="inline-flex items-center gap-xs text-secondary font-code-sm"><span
                                             class="w-2 h-2 rounded-full bg-secondary"></span>Inactive</span></td>
                                 <td class="py-md">
-                                    <details>
+                                    <details class="group">
                                         <summary
                                             class="list-none cursor-pointer text-secondary font-code-sm flex items-center gap-xs">
-                                            <span class="material-symbols-outlined text-[16px]">chevron_right</span>3
+                                            <span
+                                                class="material-symbols-outlined text-[16px] transition-transform group-open:rotate-90">chevron_right</span>3
                                             attached skills</summary>
+                                        <div class="mt-sm flex flex-wrap gap-xs pl-lg transition-all duration-300">
+                                            <span
+                                                class="px-sm py-xs bg-surface-container-highest clip-octagon text-sm">Web
+                                                Navigator</span>
+                                            <span
+                                                class="px-sm py-xs bg-surface-container-highest clip-octagon text-sm">Calendar
+                                                Sync</span>
+                                            <span
+                                                class="px-sm py-xs bg-surface-container-highest clip-octagon text-sm">Queue
+                                                Router</span>
+                                        </div>
                                     </details>
                                 </td>
                                 <td class="py-md text-right">
@@ -222,7 +234,7 @@
                                         class="inline-flex items-center gap-xs text-error font-code-sm"><span
                                             class="w-2 h-2 rounded-full bg-error"></span>Failing</span></td>
                                 <td class="py-md">
-                                    <details open class="group">
+                                    <details class="group">
                                         <summary
                                             class="list-none cursor-pointer text-secondary font-code-sm flex items-center gap-xs">
                                             <span
