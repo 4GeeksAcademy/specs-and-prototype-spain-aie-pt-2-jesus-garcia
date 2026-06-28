@@ -175,7 +175,12 @@
                                         <div
                                             class="absolute right-0 mt-sm w-40 clip-octagon border border-outline-variant/30 bg-surface-container-highest p-xs shadow-xl">
                                             <button
-                                                class="w-full text-left px-sm py-sm hover:bg-surface-variant rounded text-on-surface">Ver
+                                                class="w-full text-left px-sm py-sm hover:bg-surface-variant rounded text-on-surface"
+                                                data-modal="user-modal"
+                                                data-field-name="Lucia Moreno"
+                                                data-field-workspace="Vectra AI"
+                                                data-field-role="Operations Director"
+                                                data-field-login="17 Jun 2026 · 09:42 CET">Ver
                                                 detalle</button>
                                             <button
                                                 class="w-full text-left px-sm py-sm hover:bg-surface-variant rounded text-error">Eliminar</button>
@@ -207,7 +212,12 @@
                                         <div
                                             class="absolute right-0 mt-sm w-40 clip-octagon border border-outline-variant/30 bg-surface-container-highest p-xs shadow-xl">
                                             <button
-                                                class="w-full text-left px-sm py-sm hover:bg-surface-variant rounded text-on-surface">Ver
+                                                class="w-full text-left px-sm py-sm hover:bg-surface-variant rounded text-on-surface"
+                                                data-modal="user-modal"
+                                                data-field-name="Hugo Serra"
+                                                data-field-workspace="North Signal"
+                                                data-field-role="Growth Lead"
+                                                data-field-login="16 Jun 2026 · 14:15 CET">Ver
                                                 detalle</button>
                                             <button
                                                 class="w-full text-left px-sm py-sm hover:bg-surface-variant rounded text-error">Eliminar</button>
@@ -238,7 +248,12 @@
                                         <div
                                             class="absolute right-0 mt-sm w-40 clip-octagon border border-outline-variant/30 bg-surface-container-highest p-xs shadow-xl">
                                             <button
-                                                class="w-full text-left px-sm py-sm hover:bg-surface-variant rounded text-on-surface">Ver
+                                                class="w-full text-left px-sm py-sm hover:bg-surface-variant rounded text-on-surface"
+                                                data-modal="user-modal"
+                                                data-field-name="Nora Vidal"
+                                                data-field-workspace="Atlas Ops"
+                                                data-field-role="Customer Success"
+                                                data-field-login="15 Jun 2026 · 11:30 CET">Ver
                                                 detalle</button>
                                             <button
                                                 class="w-full text-left px-sm py-sm hover:bg-surface-variant rounded text-error">Eliminar</button>
@@ -251,37 +266,41 @@
                 </div>
             </div>
 
-            <div class="bg-surface-container-high p-lg clip-octagon border border-outline-variant/30 max-w-3xl">
-                <div class="flex items-center justify-between gap-md mb-md">
-                    <div>
-                        <p class="font-code-sm text-code-sm text-secondary uppercase tracking-[0.3em]">Modal Preview</p>
-                        <h3 class="font-headline-md text-headline-md text-on-surface mt-xs">User Detail</h3>
-                    </div>
-                    <button class="text-on-surface-variant hover:text-on-surface">
-                        <span class="material-symbols-outlined">close</span>
-                    </button>
+        </div>
+    </main>
+
+    <div id="user-modal" class="modal-overlay hidden">
+        <div class="modal-content clip-octagon bg-surface-container-high p-lg border border-outline-variant/30 max-w-3xl">
+            <div class="flex items-center justify-between gap-md mb-md">
+                <div>
+                    <h3 class="font-headline-md text-headline-md text-on-surface">User Detail</h3>
                 </div>
-                <div class="grid sm:grid-cols-2 gap-md text-sm">
-                    <div class="bg-surface-container-highest p-md clip-octagon">
-                        <p class="text-on-surface-variant">Full Name</p>
-                        <p class="text-on-surface mt-xs">Lucia Moreno</p>
-                    </div>
-                    <div class="bg-surface-container-highest p-md clip-octagon">
-                        <p class="text-on-surface-variant">Workspace</p>
-                        <p class="text-on-surface mt-xs">Vectra AI</p>
-                    </div>
-                    <div class="bg-surface-container-highest p-md clip-octagon">
-                        <p class="text-on-surface-variant">Role</p>
-                        <p class="text-on-surface mt-xs">Operations Director</p>
-                    </div>
-                    <div class="bg-surface-container-highest p-md clip-octagon">
-                        <p class="text-on-surface-variant">Last Login</p>
-                        <p class="text-on-surface mt-xs">17 Jun 2026 · 09:42 CET</p>
-                    </div>
+                <button class="modal-close text-on-surface-variant hover:text-on-surface">
+                    <span class="material-symbols-outlined">close</span>
+                </button>
+            </div>
+            <div data-modal-body class="grid sm:grid-cols-2 gap-md text-sm">
+                <div class="bg-surface-container-highest p-md clip-octagon">
+                    <p class="text-on-surface-variant">Full Name</p>
+                    <p class="text-on-surface mt-xs" data-field="name"></p>
+                </div>
+                <div class="bg-surface-container-highest p-md clip-octagon">
+                    <p class="text-on-surface-variant">Workspace</p>
+                    <p class="text-on-surface mt-xs" data-field="workspace"></p>
+                </div>
+                <div class="bg-surface-container-highest p-md clip-octagon">
+                    <p class="text-on-surface-variant">Role</p>
+                    <p class="text-on-surface mt-xs" data-field="role"></p>
+                </div>
+                <div class="bg-surface-container-highest p-md clip-octagon">
+                    <p class="text-on-surface-variant">Last Login</p>
+                    <p class="text-on-surface mt-xs" data-field="login"></p>
                 </div>
             </div>
         </div>
-    </main>
+    </div>
+
+    <script src="/modals.js"></script>
     <script src="/layout.js"></script>
 </body>
 

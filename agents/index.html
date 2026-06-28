@@ -170,7 +170,9 @@
                                         <div
                                             class="absolute right-0 mt-sm w-44 clip-octagon border border-outline-variant/30 bg-surface-container-highest p-xs shadow-xl">
                                             <button
-                                                class="w-full text-left px-sm py-sm hover:bg-surface-variant rounded text-on-surface">Configurar</button><button
+                                                class="w-full text-left px-sm py-sm hover:bg-surface-variant rounded text-on-surface"
+                                                data-modal="agent-modal"
+                                                data-field-prompt="You are Contract Sentinel. Review inbound legal and procurement documents, extract pricing clauses, identify risk anomalies and escalate blockers before contract execution.">Configurar</button><button
                                                 class="w-full text-left px-sm py-sm hover:bg-surface-variant rounded text-error">Eliminar</button>
                                         </div>
                                     </details>
@@ -202,7 +204,9 @@
                                         <div
                                             class="absolute right-0 mt-sm w-44 clip-octagon border border-outline-variant/30 bg-surface-container-highest p-xs shadow-xl">
                                             <button
-                                                class="w-full text-left px-sm py-sm hover:bg-surface-variant rounded text-on-surface">Configurar</button><button
+                                                class="w-full text-left px-sm py-sm hover:bg-surface-variant rounded text-on-surface"
+                                                data-modal="agent-modal"
+                                                data-field-prompt="You are Ops Router. Coordinate inter-agent task routing, manage queue prioritization, and enforce execution budgets across concurrent workflows.">Configurar</button><button
                                                 class="w-full text-left px-sm py-sm hover:bg-surface-variant rounded text-error">Eliminar</button>
                                         </div>
                                     </details>
@@ -239,7 +243,9 @@
                                         <div
                                             class="absolute right-0 mt-sm w-44 clip-octagon border border-outline-variant/30 bg-surface-container-highest p-xs shadow-xl">
                                             <button
-                                                class="w-full text-left px-sm py-sm hover:bg-surface-variant rounded text-on-surface">Configurar</button><button
+                                                class="w-full text-left px-sm py-sm hover:bg-surface-variant rounded text-on-surface"
+                                                data-modal="agent-modal"
+                                                data-field-prompt="You are Revenue Watchdog. Monitor billing pipelines, detect revenue leakage, flag payment anomalies, and generate compliance reports for finance stakeholders.">Configurar</button><button
                                                 class="w-full text-left px-sm py-sm hover:bg-surface-variant rounded text-error">Eliminar</button>
                                         </div>
                                     </details>
@@ -250,20 +256,26 @@
                 </div>
             </div>
 
-            <div class="bg-surface-container-high p-lg clip-octagon border border-outline-variant/30 max-w-4xl">
-                <div class="flex items-center justify-between gap-md mb-md">
-                    <div>
-                        <p class="font-code-sm text-code-sm text-secondary uppercase tracking-[0.3em]">Modal Preview</p>
-                        <h3 class="font-headline-md text-headline-md text-on-surface mt-xs">System Prompt</h3>
-                    </div>
-                    <button class="text-on-surface-variant hover:text-on-surface"><span
-                            class="material-symbols-outlined">close</span></button>
-                </div>
-                <pre
-                    class="bg-surface-container-highest p-md clip-octagon text-sm text-on-surface-variant whitespace-pre-wrap">You are Contract Sentinel. Review inbound legal and procurement documents, extract pricing clauses, identify risk anomalies and escalate blockers before contract execution.</pre>
-            </div>
         </div>
     </main>
+
+    <div id="agent-modal" class="modal-overlay hidden">
+        <div class="modal-content clip-octagon bg-surface-container-high p-lg border border-outline-variant/30 max-w-4xl">
+            <div class="flex items-center justify-between gap-md mb-md">
+                <div>
+                    <h3 class="font-headline-md text-headline-md text-on-surface">System Prompt</h3>
+                </div>
+                <button class="modal-close text-on-surface-variant hover:text-on-surface"><span
+                        class="material-symbols-outlined">close</span></button>
+            </div>
+            <div data-modal-body>
+                <pre
+                    class="bg-surface-container-highest p-md clip-octagon text-sm text-on-surface-variant whitespace-pre-wrap" data-field="prompt"></pre>
+            </div>
+        </div>
+    </div>
+
+    <script src="/modals.js"></script>
     <script src="/layout.js"></script>
 </body>
 

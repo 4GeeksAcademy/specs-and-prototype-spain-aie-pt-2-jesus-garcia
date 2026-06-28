@@ -62,7 +62,9 @@
                             <div
                                 class="absolute right-0 mt-sm w-40 clip-octagon border border-outline-variant/30 bg-surface-container-highest p-xs shadow-xl">
                                 <button
-                                    class="w-full text-left px-sm py-sm hover:bg-surface-variant rounded text-on-surface">Ver
+                                    class="w-full text-left px-sm py-sm hover:bg-surface-variant rounded text-on-surface"
+                                    data-modal="skill-modal"
+                                    data-field-description="Document Reader supports OCR, semantic chunking, metadata extraction and confidence scoring. Ideal for contract review and ticket triage flows.">Ver
                                     detalle</button><button
                                     class="w-full text-left px-sm py-sm hover:bg-surface-variant rounded text-error">Eliminar</button>
                             </div>
@@ -85,7 +87,9 @@
                             <div
                                 class="absolute right-0 mt-sm w-40 clip-octagon border border-outline-variant/30 bg-surface-container-highest p-xs shadow-xl">
                                 <button
-                                    class="w-full text-left px-sm py-sm hover:bg-surface-variant rounded text-on-surface">Ver
+                                    class="w-full text-left px-sm py-sm hover:bg-surface-variant rounded text-on-surface"
+                                    data-modal="skill-modal"
+                                    data-field-description="Calendar Sync handles event scheduling, availability polling, and multi-calendar coordination across Google, Outlook and iCloud.">Ver
                                     detalle</button><button
                                     class="w-full text-left px-sm py-sm hover:bg-surface-variant rounded text-error">Eliminar</button>
                             </div>
@@ -108,7 +112,9 @@
                             <div
                                 class="absolute right-0 mt-sm w-40 clip-octagon border border-outline-variant/30 bg-surface-container-highest p-xs shadow-xl">
                                 <button
-                                    class="w-full text-left px-sm py-sm hover:bg-surface-variant rounded text-on-surface">Ver
+                                    class="w-full text-left px-sm py-sm hover:bg-surface-variant rounded text-on-surface"
+                                    data-modal="skill-modal"
+                                    data-field-description="Web Navigator performs live page visits, extracts structured facts, validates public signals, and caches results for offline replay.">Ver
                                     detalle</button><button
                                     class="w-full text-left px-sm py-sm hover:bg-surface-variant rounded text-error">Eliminar</button>
                             </div>
@@ -131,7 +137,9 @@
                             <div
                                 class="absolute right-0 mt-sm w-40 clip-octagon border border-outline-variant/30 bg-surface-container-highest p-xs shadow-xl">
                                 <button
-                                    class="w-full text-left px-sm py-sm hover:bg-surface-variant rounded text-on-surface">Ver
+                                    class="w-full text-left px-sm py-sm hover:bg-surface-variant rounded text-on-surface"
+                                    data-modal="skill-modal"
+                                    data-field-description="CRM Push synchronizes lead records, activity notes, deal stages and customer statuses into Salesforce, HubSpot and Close.">Ver
                                     detalle</button><button
                                     class="w-full text-left px-sm py-sm hover:bg-surface-variant rounded text-error">Eliminar</button>
                             </div>
@@ -154,7 +162,9 @@
                             <div
                                 class="absolute right-0 mt-sm w-40 clip-octagon border border-outline-variant/30 bg-surface-container-highest p-xs shadow-xl">
                                 <button
-                                    class="w-full text-left px-sm py-sm hover:bg-surface-variant rounded text-on-surface">Ver
+                                    class="w-full text-left px-sm py-sm hover:bg-surface-variant rounded text-on-surface"
+                                    data-modal="skill-modal"
+                                    data-field-description="ERP Sync reconciles orders, invoices, inventory movements and operational logs with SAP, NetSuite and Odoo backends.">Ver
                                     detalle</button><button
                                     class="w-full text-left px-sm py-sm hover:bg-surface-variant rounded text-error">Eliminar</button>
                             </div>
@@ -177,7 +187,9 @@
                             <div
                                 class="absolute right-0 mt-sm w-40 clip-octagon border border-outline-variant/30 bg-surface-container-highest p-xs shadow-xl">
                                 <button
-                                    class="w-full text-left px-sm py-sm hover:bg-surface-variant rounded text-on-surface">Ver
+                                    class="w-full text-left px-sm py-sm hover:bg-surface-variant rounded text-on-surface"
+                                    data-modal="skill-modal"
+                                    data-field-description="Incident Escalation routes critical alerts to email, Slack webhooks, PagerDuty and custom API endpoints with configurable severity policies.">Ver
                                     detalle</button><button
                                     class="w-full text-left px-sm py-sm hover:bg-surface-variant rounded text-error">Eliminar</button>
                             </div>
@@ -188,19 +200,25 @@
                 </article>
             </div>
 
-            <div class="bg-surface-container-high p-lg clip-octagon border border-outline-variant/30 max-w-3xl">
-                <div class="flex items-center justify-between gap-md mb-md">
-                    <div>
-                        <p class="font-code-sm text-code-sm text-secondary uppercase tracking-[0.3em]">Modal Preview</p>
-                        <h3 class="font-headline-md text-headline-md text-on-surface mt-xs">Skill Detail</h3>
-                    </div><button class="text-on-surface-variant hover:text-on-surface"><span
-                            class="material-symbols-outlined">close</span></button>
-                </div>
-                <p class="text-on-surface-variant">Document Reader supports OCR, semantic chunking, metadata extraction
-                    and confidence scoring. Ideal for contract review and ticket triage flows.</p>
-            </div>
         </div>
     </main>
+
+    <div id="skill-modal" class="modal-overlay hidden">
+        <div class="modal-content clip-octagon bg-surface-container-high p-lg border border-outline-variant/30 max-w-3xl">
+            <div class="flex items-center justify-between gap-md mb-md">
+                <div>
+                    <h3 class="font-headline-md text-headline-md text-on-surface">Skill Detail</h3>
+                </div>
+                <button class="modal-close text-on-surface-variant hover:text-on-surface"><span
+                        class="material-symbols-outlined">close</span></button>
+            </div>
+            <div data-modal-body>
+                <p class="text-on-surface-variant" data-field="description"></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="/modals.js"></script>
     <script src="/layout.js"></script>
 </body>
 

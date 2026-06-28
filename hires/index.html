@@ -73,7 +73,9 @@
                                         <div
                                             class="absolute right-0 mt-sm w-40 clip-octagon border border-outline-variant/30 bg-surface-container-highest p-xs shadow-xl">
                                             <button
-                                                class="w-full text-left px-sm py-sm hover:bg-surface-variant rounded text-on-surface">Ver
+                                                class="w-full text-left px-sm py-sm hover:bg-surface-variant rounded text-on-surface"
+                                                data-modal="hire-modal"
+                                                data-items='[{"skill":"Document Reader","price":"€4,500"},{"skill":"Pricing Parser","price":"€5,200"},{"skill":"Calendar Sync","price":"€2,100"},{"skill":"Managed Service Fee","price":"€3,000"}]'>Ver
                                                 detalle</button></div>
                                     </details>
                                 </td>
@@ -93,7 +95,9 @@
                                         <div
                                             class="absolute right-0 mt-sm w-40 clip-octagon border border-outline-variant/30 bg-surface-container-highest p-xs shadow-xl">
                                             <button
-                                                class="w-full text-left px-sm py-sm hover:bg-surface-variant rounded text-on-surface">Ver
+                                                class="w-full text-left px-sm py-sm hover:bg-surface-variant rounded text-on-surface"
+                                                data-modal="hire-modal"
+                                                data-items='[{"skill":"Web Navigator","price":"€3,800"},{"skill":"Calendar Sync","price":"€2,100"},{"skill":"Managed Service Fee","price":"€2,300"}]'>Ver
                                                 detalle</button></div>
                                     </details>
                                 </td>
@@ -112,7 +116,9 @@
                                         <div
                                             class="absolute right-0 mt-sm w-40 clip-octagon border border-outline-variant/30 bg-surface-container-highest p-xs shadow-xl">
                                             <button
-                                                class="w-full text-left px-sm py-sm hover:bg-surface-variant rounded text-on-surface">Ver
+                                                class="w-full text-left px-sm py-sm hover:bg-surface-variant rounded text-on-surface"
+                                                data-modal="hire-modal"
+                                                data-items='[{"skill":"ERP Sync","price":"€6,500"},{"skill":"Anomaly Alerting","price":"€4,200"},{"skill":"Managed Service Fee","price":"€10,800"}]'>Ver
                                                 detalle</button></div>
                                     </details>
                                 </td>
@@ -122,27 +128,23 @@
                 </div>
             </div>
 
-            <div class="bg-surface-container-high p-lg clip-octagon border border-outline-variant/30 max-w-4xl">
-                <div class="flex items-center justify-between gap-md mb-md">
-                    <div>
-                        <p class="font-code-sm text-code-sm text-secondary uppercase tracking-[0.3em]">Modal Preview</p>
-                        <h3 class="font-headline-md text-headline-md text-on-surface mt-xs">Contract Breakdown</h3>
-                    </div><button class="text-on-surface-variant hover:text-on-surface"><span
-                            class="material-symbols-outlined">close</span></button>
-                </div>
-                <div class="space-y-sm">
-                    <div class="flex items-center justify-between bg-surface-container-highest p-md clip-octagon">
-                        <span>Document Reader</span><span class="font-code-sm">€4,500</span></div>
-                    <div class="flex items-center justify-between bg-surface-container-highest p-md clip-octagon">
-                        <span>Pricing Parser</span><span class="font-code-sm">€5,200</span></div>
-                    <div class="flex items-center justify-between bg-surface-container-highest p-md clip-octagon">
-                        <span>Calendar Sync</span><span class="font-code-sm">€2,100</span></div>
-                    <div class="flex items-center justify-between bg-surface-container-highest p-md clip-octagon">
-                        <span>Managed Service Fee</span><span class="font-code-sm">€3,000</span></div>
-                </div>
-            </div>
         </div>
     </main>
+
+    <div id="hire-modal" class="modal-overlay hidden">
+        <div class="modal-content clip-octagon bg-surface-container-high p-lg border border-outline-variant/30 max-w-4xl">
+            <div class="flex items-center justify-between gap-md mb-md">
+                <div>
+                    <h3 class="font-headline-md text-headline-md text-on-surface">Contract Breakdown</h3>
+                </div>
+                <button class="modal-close text-on-surface-variant hover:text-on-surface"><span
+                        class="material-symbols-outlined">close</span></button>
+            </div>
+            <div data-modal-body class="space-y-sm" data-modal-items></div>
+        </div>
+    </div>
+
+    <script src="/modals.js"></script>
     <script src="/layout.js"></script>
 </body>
 
