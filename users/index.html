@@ -20,7 +20,7 @@
 
 <body class="bg-background text-on-background font-body-md min-h-screen flex overflow-hidden">
     <div data-layout-sidebar></div>
-    <main class="flex-1 flex flex-col md:ml-[260px] h-screen bg-pattern relative">
+    <main class="flex-1 flex flex-col md:ml-[260px] h-screen bg-pattern relative min-w-0">
         <div data-layout-topbar></div>
         <div class="flex-1 overflow-y-auto p-container-margin md:p-xl space-y-xl z-10">
             <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-md">
@@ -119,9 +119,10 @@
                 </div>
             </div>
 
-            <div class="bg-surface-container-high p-lg clip-octagon border border-outline-variant/30 mt-xl space-y-lg">
+            <div
+                class="bg-surface-container-high clip-octagon border border-outline-variant/30 mt-xl space-y-lg p-0 sm:p-lg min-w-0">
                 <div
-                    class="flex flex-col lg:flex-row lg:items-center justify-between gap-md pb-sm border-b border-outline-variant/30">
+                    class="flex flex-col lg:flex-row lg:items-center justify-between gap-md pb-sm border-b border-outline-variant/30 px-lg sm:px-0 pt-lg sm:pt-0">
                     <div>
                         <h3 class="font-headline-md text-headline-md text-on-surface">Registered Users</h3>
                         <p class="font-body-md text-body-md text-on-surface-variant mt-xs">Prototype table with quick
@@ -137,8 +138,7 @@
                             class="px-sm py-xs clip-octagon border border-outline-variant text-on-surface-variant">Enterprise</span>
                     </div>
                 </div>
-
-                <div class="overflow-x-auto">
+                <div class="overflow-x-auto overflow-y-hidden pb-lg sm:pb-0 min-w-0">
                     <table class="w-full min-w-[860px] text-left border-collapse font-body-md text-body-md">
                         <thead>
                             <tr
@@ -176,10 +176,8 @@
                                             class="absolute right-0 mt-sm w-40 clip-octagon border border-outline-variant/30 bg-surface-container-highest p-xs shadow-xl">
                                             <button
                                                 class="w-full text-left px-sm py-sm hover:bg-surface-variant rounded text-on-surface"
-                                                data-modal="user-modal"
-                                                data-field-name="Lucia Moreno"
-                                                data-field-workspace="Vectra AI"
-                                                data-field-role="Operations Director"
+                                                data-modal="user-modal" data-field-name="Lucia Moreno"
+                                                data-field-workspace="Vectra AI" data-field-role="Operations Director"
                                                 data-field-login="17 Jun 2026 · 09:42 CET">Ver
                                                 detalle</button>
                                             <button
@@ -213,10 +211,8 @@
                                             class="absolute right-0 mt-sm w-40 clip-octagon border border-outline-variant/30 bg-surface-container-highest p-xs shadow-xl">
                                             <button
                                                 class="w-full text-left px-sm py-sm hover:bg-surface-variant rounded text-on-surface"
-                                                data-modal="user-modal"
-                                                data-field-name="Hugo Serra"
-                                                data-field-workspace="North Signal"
-                                                data-field-role="Growth Lead"
+                                                data-modal="user-modal" data-field-name="Hugo Serra"
+                                                data-field-workspace="North Signal" data-field-role="Growth Lead"
                                                 data-field-login="16 Jun 2026 · 14:15 CET">Ver
                                                 detalle</button>
                                             <button
@@ -249,10 +245,8 @@
                                             class="absolute right-0 mt-sm w-40 clip-octagon border border-outline-variant/30 bg-surface-container-highest p-xs shadow-xl">
                                             <button
                                                 class="w-full text-left px-sm py-sm hover:bg-surface-variant rounded text-on-surface"
-                                                data-modal="user-modal"
-                                                data-field-name="Nora Vidal"
-                                                data-field-workspace="Atlas Ops"
-                                                data-field-role="Customer Success"
+                                                data-modal="user-modal" data-field-name="Nora Vidal"
+                                                data-field-workspace="Atlas Ops" data-field-role="Customer Success"
                                                 data-field-login="15 Jun 2026 · 11:30 CET">Ver
                                                 detalle</button>
                                             <button
@@ -270,7 +264,8 @@
     </main>
 
     <div id="user-modal" class="modal-overlay hidden">
-        <div class="modal-content clip-octagon bg-surface-container-high p-lg border border-outline-variant/30 max-w-3xl">
+        <div
+            class="modal-content clip-octagon bg-surface-container-high p-lg border border-outline-variant/30 max-w-3xl">
             <div class="flex items-center justify-between gap-md mb-md">
                 <div>
                     <h3 class="font-headline-md text-headline-md text-on-surface">User Detail</h3>

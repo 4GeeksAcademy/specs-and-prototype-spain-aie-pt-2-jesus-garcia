@@ -134,3 +134,27 @@
     overflow-y: auto;
     width: 100%;
 }
+
+.sidebar-backdrop {
+    display: none;
+    position: fixed;
+    inset: 0;
+    z-index: 39;
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(2px);
+}
+
+.sidebar-backdrop.open {
+    display: block;
+}
+
+@media (max-width: 767px) {
+    [data-sidebar] {
+        transform: translateX(-100%);
+        transition: transform 0.25s ease;
+    }
+
+    [data-sidebar].open {
+        transform: translateX(0);
+    }
+}

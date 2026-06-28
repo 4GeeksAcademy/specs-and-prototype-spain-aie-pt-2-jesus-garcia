@@ -20,7 +20,7 @@
 
 <body class="bg-background text-on-background font-body-md min-h-screen flex overflow-hidden">
     <div data-layout-sidebar></div>
-    <main class="flex-1 flex flex-col md:ml-[260px] h-screen bg-pattern relative">
+    <main class="flex-1 flex flex-col md:ml-[260px] h-screen bg-pattern relative min-w-0">
         <div data-layout-topbar></div>
         <div class="flex-1 overflow-y-auto p-container-margin md:p-xl space-y-xl z-10">
             <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-md">
@@ -35,15 +35,15 @@
                         active</span></div>
             </div>
 
-            <div class="bg-surface-container-high p-lg clip-octagon border border-outline-variant/30 mt-xl space-y-lg">
-                <div class="flex items-center justify-between gap-md pb-sm border-b border-outline-variant/30">
+            <div class="bg-surface-container-high clip-octagon border border-outline-variant/30 mt-xl space-y-lg p-0 sm:p-lg min-w-0">
+                <div class="flex items-center justify-between gap-md pb-sm border-b border-outline-variant/30 px-lg sm:px-0 pt-lg sm:pt-0">
                     <div>
                         <h3 class="font-headline-md text-headline-md text-on-surface">Contracts</h3>
                         <p class="font-body-md text-body-md text-on-surface-variant mt-xs">Rental agreements and
                             monetized skill bundles.</p>
                     </div>
                 </div>
-                <div class="overflow-x-auto">
+                <div class="overflow-x-auto overflow-y-hidden pb-lg sm:pb-0 min-w-0">
                     <table class="w-full min-w-[1080px] text-left border-collapse font-body-md text-body-md">
                         <thead>
                             <tr

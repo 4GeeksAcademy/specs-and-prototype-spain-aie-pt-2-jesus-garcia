@@ -55,6 +55,52 @@ async function injectComponent(slotSelector, componentPath) {
     slot.innerHTML = await response.text();
 }
 
+function initializeSidebar() {
+    const toggleBtn = document.querySelector('[data-sidebar-toggle]');
+    const sidebar = document.querySelector('[data-sidebar]');
+    if (!toggleBtn || !sidebar) return;
+
+    const backdrop = document.createElement('div');
+    backdrop.className = 'sidebar-backdrop';
+    document.body.appendChild(backdrop);
+
+    const icon = toggleBtn.querySelector('.material-symbols-outlined');
+
+    function openSidebar() {
+        sidebar.classList.add('open');
+        backdrop.classList.add('open');
+        document.body.style.overflow = 'hidden';
+        if (icon) icon.textContent = 'close';
+    }
+
+    function closeSidebar() {
+        sidebar.classList.remove('open');
+        backdrop.classList.remove('open');
+        document.body.style.overflow = '';
+        if (icon) icon.textContent = 'menu';
+    }
+
+    toggleBtn.addEventListener('click', () => {
+        if (sidebar.classList.contains('open')) {
+            closeSidebar();
+        } else {
+            openSidebar();
+        }
+    });
+
+    backdrop.addEventListener('click', closeSidebar);
+
+    sidebar.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', closeSidebar);
+    });
+
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && sidebar.classList.contains('open')) {
+            closeSidebar();
+        }
+    });
+}
+
 async function initializeLayout() {
     try {
         await Promise.all([
@@ -63,6 +109,7 @@ async function initializeLayout() {
         ]);
 
         initializeActiveNavigation();
+        initializeSidebar();
         window.AgentHubTheme?.initializeThemeToggle();
     } catch (error) {
         console.error(error);
